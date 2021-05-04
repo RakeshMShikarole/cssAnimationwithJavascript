@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section>
+      <img src="images/abhi.jpeg" width="100%" alt="">
+      <div class="snow1"></div>
+      <div class="snow2"></div>
+  <div class="content">
+    <p>Play</p>
+    <img id="icon" src="images/play.png" >
+  </div>
+    </section>
+<audio id="song">
+  <source src="images/song.mp3" type="audio/mp3">
+</audio>
+
+<script>
+  var mysong = document.getElementById('song');
+  var myicon = document.getElementById('icon');
+
+  myicon.onclick = function(){
+   if (mysong.paused) {
+     mysong.play();
+     myicon.src="images/pause.png"
+   }else {
+     mysong.pause();
+     myicon.src="images/play.png"
+   }
+  }
+</script>
+
+  </body>
+</html>
